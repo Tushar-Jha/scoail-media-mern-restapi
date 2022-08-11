@@ -96,3 +96,23 @@ overflow-y: scroll;
     margin-bottom: 20px;
     cursor: pointer;
 }
+
+.rightBarFollowButton{
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    margin-bottom: 10px;
+    border: none;
+    background-color:  #1872f2;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rightBarFollowButton:focus{
+    outline: none;
+}

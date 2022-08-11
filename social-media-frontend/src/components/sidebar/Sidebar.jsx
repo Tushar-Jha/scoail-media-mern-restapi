@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './sidebar.css'
+import { AuthContext } from "../../context/AuthContext";
+import {LogOut} from "../../context/AuthAction"
 
 
 function Sidebar() {
+    const {  dispatch } = useContext(AuthContext);
     return (
         <div className='sidebar'>
             <div className="sidebarWrapper">
@@ -64,37 +67,8 @@ function Sidebar() {
                     </li>
                 </ul>
                 <button className="sidebarButton">Show More</button>
+                <button className="sidebarButton logout" onClick={()=>{dispatch(LogOut())}}>Log Out</button>
                 <hr className="sidebarHr" />
-                <ul className="sidebarFriendList">
-                    <li className="sidebarFriend">
-                        <img className='sidebarFriendImg' src="/assets/persons/person2.jpg" alt="" />
-                        <span className="sidebarFriendName">Jane Doe</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className='sidebarFriendImg' src="/assets/persons/person2.jpg" alt="" />
-                        <span className="sidebarFriendName">Jane Doe</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className='sidebarFriendImg' src="/assets/persons/person2.jpg" alt="" />
-                        <span className="sidebarFriendName">Jane Doe</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className='sidebarFriendImg' src="/assets/persons/person2.jpg" alt="" />
-                        <span className="sidebarFriendName">Jane Doe</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className='sidebarFriendImg' src="/assets/persons/person2.jpg" alt="" />
-                        <span className="sidebarFriendName">Jane Doe</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className='sidebarFriendImg' src="/assets/persons/person2.jpg" alt="" />
-                        <span className="sidebarFriendName">Jane Doe</span>
-                    </li>
-                    <li className="sidebarFriend">
-                        <img className='sidebarFriendImg' src="/assets/persons/person2.jpg" alt="" />
-                        <span className="sidebarFriendName">Jane Doe</span>
-                    </li>
-                </ul>
             </div>
         </div>
     )

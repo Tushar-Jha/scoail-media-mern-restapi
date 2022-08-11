@@ -80,3 +80,9 @@
   'GRAD' 0,
   'opsz' 48
 }
+
+.logout{
+    margin-left: 38px;
+    background-color: #1877F2;
+    color: white;
+}

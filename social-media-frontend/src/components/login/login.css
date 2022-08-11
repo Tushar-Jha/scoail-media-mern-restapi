@@ -39,12 +39,13 @@
     background-color: white;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .loginInput{
     height: 50px;
     border-radius: 10px;
-    border: 1p solid gray;
+    border: 1p solid rgb(199, 199, 199);
     font-size: 18px;
     padding-left: 20px;
 }
@@ -64,6 +65,10 @@
     cursor:  pointer;
 }
 
+.loginButton:disabled{
+    cursor: not-allowed;
+}
+
 .loginForgot{
     text-align: center;
     color: #1775ee;
@@ -71,7 +76,6 @@
 
 .loginRegisterButton{
     width: 60%;
-    align-self: center;
     height: 50px;
     border-radius: 10px;
     border: none;
@@ -81,3 +85,9 @@
     font-weight: 500;
     cursor:  pointer;   
 }
+
+.loginRegisterButton:disabled{
+    cursor: not-allowed;
+}
+
+

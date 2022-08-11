@@ -44,7 +44,7 @@
 .loginInput{
     height: 50px;
     border-radius: 10px;
-    border: 1p solid gray;
+    border: 1p solid rgb(199, 199, 199);
     font-size: 18px;
     padding-left: 20px;
 }
